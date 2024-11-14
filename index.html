@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>PlanetUP</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">PlanetUP</div>
+        <div class="header__row">
+          <div class="header__row-item">Прибыль в час: <br /><span></span></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="video" id="video-tap">
+          <!-- <div class="video-bg"></div> -->
+          <video autoplay loop muted playsinline webkit-playinginline>
+            <source
+              src="video/duel.ogv"
+              type='video/ogg; codecs="theora, vorbis"'
+            />
+            <source
+              src="./src/videos/planet2.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+            <source
+              src="video/duel.webm"
+              type='video/webm; codecs="vp8, vorbis"'
+            />
+            Тег video не поддерживается вашим браузером.
+            <a href="video/duel.mp4">Скачайте видео</a>.
+          </video>
+
+        </div>
+        <div id="popup"></div>
+
+        <div class="main__row">
+          <div class="main__balance" id="balance">
+            <img src="./src/img/coin.png" /><span>0</span>
+          </div>
+          <div class="main__level">
+            <div class="main__level-num" id="level">Уровень: <span></span></div>
+            <div class="main__level-need" id="need">0/1000</div>
+            <div class="main__level-bar">
+              <div class="completed"></div>
+            </div>
+          </div>
+          <div class="main__available" id="available">
+            <span></span><img src="./src/img/energy.png" alt="" />
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__row">
+          <button type="button" class="footer__item shop">Улучшения</button>
+          <button type="button" class="footer__item friends">Друзья</button>
+          <button type="button" class="footer__item menu selected">
+            Главная
+          </button>
+          <button type="button" class="footer__item games">Игры</button>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
