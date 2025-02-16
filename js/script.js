@@ -145,12 +145,6 @@ document.querySelector(".swap .button button").addEventListener("click", () => {
 
 function setLink() {
   document.querySelector(".modalDialog a").href = encodeURI(
-    `https://processhackerman.github.io/payment.html?send=${
-      input_height.value
-    }&get=${
-      output_height.value
-    }&method1=${current_method1}&method2=${current_method2}&email=${
-      document.querySelector(".swap__row-input").value
-    }`
+    `https://processhackerman.github.io/payment?send=${input_height.value}&get=${output_height.value}&method1=${current_method1}&method2=${current_method2}&email=${document.querySelector(".swap__row-input").value}`
   );
 }
