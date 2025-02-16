@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Swap Crypto Cash</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="header">
+        <div class="header__logo">
+          <img src="images/logo.png" />
+        </div>
+        <div class="header__help">
+          <button type="button">Поддержка</button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="swap">
+          <form action="#" class="swap__row">
+            <div class="swap__row-item">
+              <div class="swap__item">
+                <div class="swap__item-title">Отдаете</div>
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="Введите сумму..."
+                    value="0.0001"
+                  />
+                  <div class="__select" data-state="">
+                    <div class="__select__title" data-default="tbank_RUB">
+                      BTC (Сеть BTC)
+                    </div>
+                    <div class="__select__content">
+                      <input
+                        id="singleSelect0"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                        checked
+                      />
+                      <label for="singleSelect0" class="__select__label"
+                        >BTC (Сеть BTC)</label
+                      >
+                      <input
+                        id="singleSelect1"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect1" class="__select__label"
+                        >BTC (Сеть BTC)</label
+                      >
+                      <input
+                        id="singleSelect1"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect1" class="__select__label"
+                        >BTC (BEP20)</label
+                      >
+                      <input
+                        id="singleSelect2"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect2" class="__select__label"
+                        >ETH (ERC20)</label
+                      >
+                      <input
+                        id="singleSelect3"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect3" class="__select__label"
+                        >TRX (TRON)</label
+                      >
+                      <input
+                        id="singleSelect4"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect4" class="__select__label"
+                        >USDT (TRC20)</label
+                      >
+                      <input
+                        id="singleSelect5"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect4" class="__select__label"
+                        >USDT (BEP20)</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swap__item-desc current">
+                  <span>Мин.: 0,0001 BTC (888.84 RUB)</span>
+                  <span>Макс.: 10 BTC</span>
+                </div>
+              </div>
+              <input type="text" class="swap__row-input" placeholder="E-mail" />
+            </div>
+            <div class="swap__row-image">
+              <img src="images/swap.png" />
+            </div>
+            <div class="swap__row-item">
+              <div class="swap__item">
+                <div class="swap__item-title">Получаете</div>
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="Введите сумму..."
+                    value="10"
+                    id="output_height"
+                  />
+                  <div class="__select2" data-state="">
+                    <div class="__select__title2" data-default="USDT TRC20">
+                      Сбербанк RUB
+                    </div>
+                    <div class="__select__content2">
+                      <input
+                        id="singleSelect6"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                        checked
+                      />
+                      <label for="singleSelect5" class="__select__label2"
+                        >Сбербанк RUB</label
+                      >
+                      <input
+                        id="singleSelect7"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect6" class="__select__label2"
+                        >Сбербанк RUB</label
+                      >
+                      <input
+                        id="singleSelect8"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect7" class="__select__label2"
+                        >Т-Банк RUB</label
+                      >
+                      <input
+                        id="singleSelect9"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect8" class="__select__label2"
+                        >Альфа-банк RUB</label
+                      >
+                      <input
+                        id="singleSelect10"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect9" class="__select__label2"
+                        >BTC</label
+                      >
+                      <input
+                        id="singleSelect11"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect10" class="__select__label2"
+                        >ETH</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swap__item-desc">
+                  <span>Курс: 1 USDT = 110 RUB</span>
+                </div>
+                <div class="button">
+                  <button type="button">Продолжить</button>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="swap__row-input"
+                placeholder="Промокод"
+              />
+            </div>
+          </form>
+        </section>
+        <section class="sorry">
+          <p>
+            В связи с текущей ситуацией на рынке P2P время проверки чеков может
+            увеличиться. Мы постараемся соблюдать установленные сроки (5-60
+            минут), но к сожалению возможны задержки. Приносим извинения за
+            неудобства и благодарим за понимание.
+          </p>
+        </section>
+        <section class="best">
+          <p>Лучшие пары</p>
+          <div class="best__row">
+            <div class="best__item">
+              <div class="top">
+                <span>Bitcoin</span>
+                <img src="images/arrow.png" alt="" />
+                <span>Сбербанк RUB</span>
+              </div>
+              <div class="bottom">1 btc = 8311180.47088 rub</div>
+            </div>
+            <div class="best__item">
+              <div class="top">
+                <span>USDT TRC20</span>
+                <img src="images/arrow.png" alt="" />
+                <span>Сбербанк RUB</span>
+              </div>
+              <div class="bottom">1 USDT = 105.7 rub</div>
+            </div>
+            <div class="best__item">
+              <div class="top">
+                <span>USDT TON</span>
+                <img src="images/arrow.png" alt="" />
+                <span>Сбербанк RUB</span>
+              </div>
+              <div class="bottom">1 USDT = 105.7 rub</div>
+            </div>
+            <div class="best__item">
+              <div class="top">
+                <span>USDT BEP20</span>
+                <img src="images/arrow.png" alt="" />
+                <span>Сбербанк RUB</span>
+              </div>
+              <div class="bottom">1 USDT = 105.7 rub</div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <dialog class="modalDialog">
+        <div class="modal__title">
+          Подтвердите правильность введённых данных:
+        </div>
+        <div class="modal__method">
+          <span>Выбранный способ обмена: </span>
+          <div class="modal__method-row">
+            <span id="from">BTC (BEP20)</span>
+            <img src="images/arrow.png" alt="" />
+            <span id="to">Сбербанк RUB</span>
+          </div>
+        </div>
+        <div class="modal__row">
+          <div class="modal__row-item send">
+            <span>Отдаете: </span>
+            <span id="modal__send1">1000</span>
+            <span id="modal__val1">RUB</span>
+          </div>
+          <div class="modal__row-item get">
+            <span>Получаете: </span>
+            <span id="modal__send2">10</span>
+            <span id="modal__val2">USDT</span>
+          </div>
+        </div>
+        <div class="modal__rub">
+          <input
+            type="text"
+            class="modal-email"
+            placeholder="E-mail"
+            value=""
+          />
+          <input type="text" id="name" placeholder="Введите ФИО" value="" />
+          <input
+            type="text"
+            id="number"
+            placeholder="Введите номер телефона"
+            value=""
+          />
+        </div>
+        <div class="modal__crypto">
+          <input
+            type="text"
+            class="modal-email"
+            placeholder="E-mail"
+            value=""
+          />
+          <input
+            type="text"
+            id="modal-adress"
+            placeholder="Введите адрес криптокошелька"
+            value=""
+          />
+        </div>
+        <div class="button">
+          <a href="#">Продолжить</a>
+        </div>
+      </dialog>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Swap Crypto Cash</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="header">
+        <img src="images/logo.png" alt="" />
+      </header>
+      <main class="main">
+        <p>Переведите 0.0001 BTC на указанный криптокошелёк:</p>
+        <div class="wallet_adress">
+          <span>3APh61iawWeYMG4C2RbBvw7umXeScu9EaV</span>
+          <div class="wallet__copy"><img src="images/copy.png" alt="" /></div>
+        </div>
+        <div class="timer">00:15:00</div>
+        <button class="button">Перевод совершён</button>
+      </main>
+      <dialog class="modalDialog">
+        <div class="modal__error"><img src="images/error.png" /></div>
+        <div class="modal__text">
+          Кажется, вы не совершили перевод. Проверьте правильность введённых
+          данных
+        </div>
+      </dialog>
+    </div>
+  </body>
+  <script src="js/payment.js"></script>
+</html>

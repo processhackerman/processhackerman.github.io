@@ -1,0 +1,385 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*::-webkit-input-placeholder {
+  font-size: 18px;
+}
+
+*::-moz-placeholder {
+  font-size: 18px;
+}
+
+*:-ms-input-placeholder {
+  font-size: 18px;
+}
+
+*::-ms-input-placeholder {
+  font-size: 18px;
+}
+
+*::placeholder {
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.content {
+  background: #121B26;
+  min-height: 100vh;
+  padding: 78px 154px;
+  color: #fff;
+  font-family: "Jost", serif;
+  font-weight: 600;
+}
+
+.header img {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  max-height: 58px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main {
+  margin-top: 80px;
+  text-align: center;
+}
+.main > p {
+  font-size: 40px;
+}
+
+.wallet_adress {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px auto;
+  margin-top: 44px;
+  padding: 50px 40px;
+  border-radius: 50px;
+  background: #1F2837;
+  max-width: 70%;
+  font-size: 40px;
+}
+.wallet_adress span {
+  max-width: 80%;
+  overflow-x: scroll;
+  display: block;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.wallet__copy {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: absolute;
+  padding: 30px;
+  aspect-ratio: 1/1;
+  background: #1E1E1E;
+  top: 5%;
+  right: 10px;
+  border-radius: 45px;
+}
+.wallet__copy:hover {
+  -webkit-box-shadow: #121B26 0 0 30px;
+          box-shadow: #121B26 0 0 30px;
+}
+
+.timer {
+  margin-top: 50px;
+  font-size: 128px;
+  color: #FF5353;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-top: 50px;
+  font-size: 30px;
+  padding: 22px 48px;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#00D138), to(#009890));
+  background: linear-gradient(90deg, #00D138, #009890);
+  font-weight: 600;
+}
+.button:hover {
+  -webkit-box-shadow: #00D138 0 0 30px 1px;
+          box-shadow: #00D138 0 0 30px 1px;
+  text-shadow: #fff 0 0 10px;
+}
+
+.modalDialog {
+  background: #464646;
+  height: 70vh;
+  width: 50vw;
+  position: absolute;
+  top: 10%;
+  margin: 0px auto;
+  border-radius: 60px;
+  padding: 100px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modalDialog::-webkit-scrollbar {
+  display: none;
+}
+.modalDialog.open {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modalDialog.open::-ms-backdrop {
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(30px);
+}
+.modalDialog.open::backdrop {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+.modalDialog .modal__error {
+  text-align: center;
+  margin: 0px auto;
+  max-height: 14rem;
+}
+.modalDialog .modal__error img {
+  max-height: 14rem;
+}
+.modalDialog .modal__text {
+  margin-top: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  max-width: 80%;
+}
+
+@media (max-width: 1734px) {
+  .wallet_adress span {
+    font-size: 20px;
+  }
+  .wallet__copy {
+    padding: 19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wallet__copy img {
+    max-width: 75%;
+  }
+}
+@media (max-width: 1142px) {
+  .timer {
+    font-size: 100px;
+  }
+  .wallet_adress {
+    max-width: 100%;
+  }
+  .modalDialog {
+    padding: 51px;
+  }
+}
+@media (max-width: 910px) {
+  .main > p {
+    font-size: 20px;
+  }
+  .timer {
+    font-size: 70px;
+  }
+  .button {
+    font-size: 20px;
+  }
+  .main {
+    margin-top: 30px;
+  }
+  .wallet_adress {
+    padding: 30px 20px;
+    border-radius: 25px;
+  }
+  .wallet__copy {
+    top: 7%;
+    right: 7px;
+    padding: 0;
+    border-radius: 25px;
+  }
+  .wallet__copy img {
+    max-width: 50%;
+  }
+  .modalDialog {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+    height: 50vh;
+  }
+  .modalDialog .modal__text {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+@media (max-width: 824px) {
+  .content {
+    padding: 41px 54px;
+  }
+  .modalDialog .modal__error img {
+    max-height: 8rem;
+  }
+}
+@media (max-width: 620px) {
+  .wallet_adress span {
+    font-size: 15px;
+  }
+  .wallet__copy {
+    background: transparent;
+    top: 5%;
+  }
+  .modalDialog .modal__text {
+    font-size: 15px;
+  }
+  .modalDialog {
+    padding: 0;
+    width: 80vw;
+  }
+}
+@media (max-width: 506px) {
+  .header img {
+    max-height: 44px;
+  }
+  .timer {
+    font-size: 50px;
+    margin-top: 25px;
+  }
+  .button {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 440px) {
+  .button {
+    font-size: 15px;
+  }
+  .wallet__copy img {
+    max-width: 30%;
+  }
+}
+@media (max-width: 370px) {
+  .content {
+    padding: 20px 20px;
+  }
+}
