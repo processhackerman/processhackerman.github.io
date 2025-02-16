@@ -1,7 +1,4 @@
-// const currentURL= window.location.href;
-const currentURL = new URL(
-  "https://processhackerman.github.io/payment.html/?send=1&get=110.00&method1=USDT%20(TRC20)&method2=%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA%20RUB&email="
-);
+const currentURL= new URL(window.location.href);
 
 const methods = {
   "BTC (Сеть BTC)": "3APh61iawWeYMG4C2RbBvw7umXeScu9EaV",
