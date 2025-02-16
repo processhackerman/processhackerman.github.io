@@ -145,7 +145,7 @@ document.querySelector(".swap .button button").addEventListener("click", () => {
 
 function setLink() {
   document.querySelector(".modalDialog a").href = encodeURI(
-    `https://processhackerman.github.io/payment.html/?send=${
+    `https://processhackerman.github.io/payment.html?send=${
       input_height.value
     }&get=${
       output_height.value
